@@ -1,0 +1,14 @@
+.create__container {
+    display: flex;
+    padding: 16px;
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .buttons {
+        display: flex;
+        justify-content: end;
+        gap: 1rem;
+    }
+}

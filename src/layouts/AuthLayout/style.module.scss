@@ -1,0 +1,51 @@
+@use "/src/scss/colors";
+
+.layout {
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  .leftSide {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgb(80, 89, 84) 50%, rgb(155, 158, 156) 100%);
+    // background-image: url(../../assets/bg-image.webp);
+    // background-size: cover;
+    // background-position:center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: space-between;
+    padding: 36px;
+
+    .logoTitle {
+      color: #fff;
+      font-weight: 700;
+      font-size: 109px;
+      line-height: 133px;
+      color: #fff;
+      .logoTitleGreen {
+        color: rgb(51, 51, 51);
+        font-size: 90px;
+      }
+    }
+
+    .logoSubtitle {
+      text-align: center;
+      color: #fff;
+      font-size: 1.5rem;
+    }
+
+  }
+
+  .rightSide {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+  }
+}

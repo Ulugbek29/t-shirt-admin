@@ -1,0 +1,33 @@
+.category__table {
+    width: 100%;
+    min-height: 100vh;
+    .content {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+
+    // .imageBox {
+    //     width: 100px;
+    //     height: 50px;
+    // }
+
+
+    .active__status {
+        font-size: 0.9rem;
+        padding: 10px 40px;
+        border-radius: 1rem;
+        background: rgba(14, 115, 246, 0.19);
+        color: rgb(14, 115, 246);
+    }
+    .inactive__status {
+        font-size: 0.9rem;
+        padding: 10px 40px;
+        border-radius: 1rem;
+        background: rgba(242, 39, 28, 0.19);
+        color: rgb(242, 39, 28);
+    }
+}
+
+
+

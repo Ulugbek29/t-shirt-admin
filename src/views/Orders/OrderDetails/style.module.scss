@@ -1,0 +1,159 @@
+
+.imageViewerWrapper {
+    z-index: 2000; 
+    position: relative;
+}
+
+
+.modal__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    max-height: 500px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    transform: translate(-50%, -50%);
+    outline: none;
+    overflow-y: scroll;
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0 2rem;
+        margin-bottom: 3rem;
+        .content__wrapper {
+            display: flex;
+            gap: 0.5rem;
+
+
+            .img__wrapper {
+                width: 45%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                .product__img__wrapper {
+                    .product__img {
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        gap: 0.5rem;
+                        width:200px;
+                        min-height: 300px;
+                        padding: 0.5rem;
+                        border: 1px solid #dddddd;
+                        border-radius: 0.5rem;
+
+                            .upload__img__btn {
+                                position: absolute;
+                                top: 5px;
+                                right: 5px;
+                                padding: 0.5rem;
+                                border: 1px solid #dddddd;
+                                border-radius: 0.5rem;
+                                backdrop-filter: blur(5px);
+                                -webkit-backdrop-filter: blur(5px);
+                                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                            }
+
+                        img {
+                            width: 100%;
+                            height: 200px;
+                            object-fit: cover;
+                        }
+
+                        .product__uploaded__img {
+                            width: 100%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 0.5rem;
+                            .uploaded__img {
+                                position: relative;
+                                border: 1px solid #dddddd;
+                                padding: 0.5rem;
+                                width: 55px;
+                                height: 55px;
+                                border-radius: 0.5rem;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: contain;
+                                    border-radius: 0.5rem;
+                                }
+
+                                .uploaded__upload__img__btn {
+                                    position: absolute;
+                                    width: 20px;
+                                    height: 20px;
+                                    top: 0px;
+                                    right: 0px;
+                                    padding: 0.5rem;
+                                    border: 1px solid #dddddd;
+                                    border-radius: 0.5rem;
+                                    backdrop-filter: blur(5px);
+                                    -webkit-backdrop-filter: blur(5px);
+                                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .table__details {
+                width: 55%;
+                .client__info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    margin-top: 2rem;
+                    p {
+                        font-size: 1.2rem;
+                    }
+                    table {
+                        border: 1px solid #d3d3d3;
+                        font-size: 1rem;
+                        border-collapse: collapse;
+                        border-radius: 1rem;
+                        th, tr, td {
+                            border: 1px solid #d3d3d3;
+                            padding: 1rem;
+                            text-align: left;
+                            cursor: pointer;
+                            &:hover {
+                                background: #f7f7f7ef;
+                            }
+                        }
+        
+                        tfoot tr td:last-child {
+                            text-align: right;
+                        }
+        
+                        th:nth-child(even) {
+                            font-weight: 400;
+                        }
+                    
+                    }
+                    .order__table {
+                        thead {
+                            tr {
+                                th {
+                                   font-weight: 600;
+                               }
+                            }
+                        }
+                     }
+                }
+            }
+        }
+        .yandex__map {
+            width: 100%;
+            height: 300px;
+            margin-top: 1rem;
+        }
+    }
+    
+}
+

@@ -1,0 +1,24 @@
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    .phoneInput {
+        width: 100%;
+        display: flex;
+        font-size: 1.1rem;
+        border: 1.5px solid #d3d3d3;;
+        outline: none;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        &:focus {
+            border: 2px solid blue;
+        }
+    }
+    .errorInput {
+        border: 1px solid red;
+    }
+    .errorText {
+        color: red;
+    }
+}

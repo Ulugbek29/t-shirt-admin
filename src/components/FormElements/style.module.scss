@@ -1,0 +1,33 @@
+@use "/src/scss/colors";
+
+.tag {
+  padding: 0 10px;
+  background-color: colors.$borders;
+  border-radius: 6px;
+}
+
+.placeholder {
+  color: #909EAB;
+  font-weight: 400;
+}
+
+.description {
+  height: 150px;
+}
+
+.HFInputField {
+  padding: 4.5px 14px;
+  border: 1px solid #d3d3d3;
+  border-radius: 0.5rem;
+  &:focus {
+    border: 2px solid orange;
+  }
+  &.error {
+    border: 1px solid red;
+  }
+}
+
+.FormHelperText {
+  margin: 0;
+  margin-top: 8px;
+}

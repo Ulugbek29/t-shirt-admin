@@ -1,0 +1,34 @@
+.modal {
+    position: absolute ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    max-height: 650px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    overflow-y: scroll;
+    h2 {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    .buttons__box {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        gap: 1rem;
+        margin-top: 0.5rem;
+        .button {
+            padding: 0.5rem 3rem;
+        }
+    }
+    .order__row {
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}

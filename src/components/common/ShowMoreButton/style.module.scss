@@ -1,0 +1,32 @@
+@use "/src/scss/colors";
+
+.showMore__btn {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    border: 1px solid colors.$blue;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    background: #fff;
+    font-weight:500;
+    &:hover {
+        background: colors.$blue;
+        color: #fff;
+    }
+}
+
+.option {
+    width: 80px;
+    display: flex;
+    justify-content:center;
+    padding: 0.1rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    &:hover {
+        background: #b9dcfe;    
+    }
+}
+.active__option {
+    background: #D4E9FD;
+}
